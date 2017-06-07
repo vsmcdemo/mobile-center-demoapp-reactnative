@@ -2,7 +2,7 @@
 
 This is demo application which shows ablities of Mobile Center.
 
-![](Images/general.png)
+![](images/general.png)
 
 Mobile Center brings together multiple services, commonly used by mobile developers, into a single, integrated product. 
 Team members can build, test, distribute, and monitor mobile apps. 
