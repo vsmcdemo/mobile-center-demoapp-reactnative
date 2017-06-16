@@ -1,0 +1,8 @@
+D:\Projects\MCXamarinUITests\MCXamarinUITests\bin\Debug\MCXamarinUITests.dll
+D:\Projects\MCXamarinUITests\MCXamarinUITests\bin\Debug\MCXamarinUITests.pdb
+D:\Projects\MCXamarinUITests\MCXamarinUITests\bin\Debug\nunit.framework.dll
+D:\Projects\MCXamarinUITests\MCXamarinUITests\bin\Debug\Xamarin.UITest.dll
+D:\Projects\MCXamarinUITests\MCXamarinUITests\bin\Debug\nunit.framework.xml
+D:\Projects\MCXamarinUITests\MCXamarinUITests\bin\Debug\Xamarin.UITest.xml
+D:\Projects\MCXamarinUITests\MCXamarinUITests\obj\Debug\MCXamarinUITests.dll
+D:\Projects\MCXamarinUITests\MCXamarinUITests\obj\Debug\MCXamarinUITests.pdb
