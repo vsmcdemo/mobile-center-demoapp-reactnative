@@ -32,7 +32,10 @@ local.properties
 
 # node.js
 #
-node_modules/
+node_modules/*
+!node_modules/react-native-google-fit/
+!node_modules/react-native-pathjs-charts/
+!node_modules/react-native-apple-healthkit-rn0.40/
 npm-debug.log
 yarn-error.log
 

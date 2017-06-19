@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-pathjs-charts@file:../",
+        "scope": null,
+        "escapedName": "react-native-pathjs-charts",
+        "name": "react-native-pathjs-charts",
+        "rawSpec": "file:../",
+        "spec": "D:\\Projects\\React\\ReactNative\\react-native-pathjs-charts",
+        "type": "directory"
+      },
+      "D:\\Projects\\React\\ReactNative\\react-native-pathjs-charts\\example"
+    ]
+  ],
+  "_from": "..",
+  "_id": "react-native-pathjs-charts@0.0.28",
+  "_inCache": true,
+  "_location": "/react-native-pathjs-charts",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-pathjs-charts@file:../",
+    "scope": null,
+    "escapedName": "react-native-pathjs-charts",
+    "name": "react-native-pathjs-charts",
+    "rawSpec": "file:../",
+    "spec": "D:\\Projects\\React\\ReactNative\\react-native-pathjs-charts",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "file:..",
+  "_shasum": "3a4d7eaca4db43dfa2beed2937baf6612ca67253",
+  "_shrinkwrap": null,
+  "_spec": "react-native-pathjs-charts@file:../",
+  "_where": "D:\\Projects\\React\\ReactNative\\react-native-pathjs-charts\\example",
+  "author": {
+    "name": "Cale Hoopes",
+    "email": "caledh@gmail.com",
+    "url": "https://github.com/capitalone"
+  },
+  "bugs": {
+    "url": "https://github.com/capitalone/react-native-pathjs-charts/issues"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "lodash": "^4.12.0",
+    "paths-js": "^0.4.5",
+    "react-native-svg": "~5.1.8"
+  },
+  "description": "Cross platform React Native charting library based on path-js and react-native-svg",
+  "devDependencies": {
+    "babel-jest": "*",
+    "babel-preset-react-native": "^1.9.0",
+    "diff": "^3.1.0",
+    "jest": "^18.0.0",
+    "jest-react-native": "*",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.0",
+    "react-test-renderer": "*"
+  },
+  "homepage": "https://github.com/capitalone/react-native-pathjs-charts#readme",
+  "jest": {
+    "preset": "jest-react-native"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-svg",
+    "paths-js",
+    "react-pathjs-chart",
+    "ios",
+    "android"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "maintainers": [
+    {
+      "name": "marzolfb",
+      "email": "marzolfb@gmail.com"
+    },
+    {
+      "name": "katscott",
+      "email": "reineskat@gmail.com"
+    }
+  ],
+  "name": "react-native-pathjs-charts",
+  "optionalDependencies": {},
+  "readme": "react-native-pathjs-charts\n=======================\n\n[![npm version](https://badge.fury.io/js/react-native-pathjs-charts.svg)](https://badge.fury.io/js/react-native-pathjs-charts)\n[![](https://img.shields.io/badge/react--native--svg-4.5.0-blue.svg)](https://www.npmjs.com/package/react-native-svg)\n[![](https://img.shields.io/badge/react--native-0.41-orange.svg)](https://facebook.github.io/react-native/)\n[![](https://img.shields.io/badge/android--ff69b4.svg)](http://developer.android.com/sdk/index.html)\n[![](https://img.shields.io/badge/ios--red.svg)](https://developer.apple.com/xcode/)\n[![](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)\n\nThis library is a cross-platform (iOS/Android) library of charts/graphs using [react-native-svg](https://github.com/magicismight/react-native-svg) and [paths-js](https://github.com/andreaferretti/paths-js) based on the excellent work done by Roman Samec in the [react-pathjs-chart](https://github.com/rsamec/react-pathjs-chart) library. The project is an early attempt at providing a ubiquitous solution for charts & graphs for React Native that offer a unified view across devices.\n\nComponents include Pie charts, Bar charts, Smoothline charts, Stockline charts, Scatterplots, Tree graphs and Radar graphs. Since Paths-Js makes no assumptions about rendering, this library is perfect for using SVG path objects to render custom charts easily.\n\nThis library is in its early stages, but I welcome contributors who would like to help make this the charting solution for React Native. Many of our mobile experiences need to create dashboards. Up to now, we've only been seeing libraries that are native bridges. Wouldn't it be great to have a cross platform solution that just worked?\n\n![](https://github.com/capitalone/react-native-pathjs-charts/wiki/images/chart-screenshots.png)\n\n## Installation\n\nTo add the library to your React Native project:\n\n```\nnpm install react-native-pathjs-charts --save\nreact-native link react-native-svg\n```\n\nFor further information on usage, see the [docs](http://www.capitalone.io/react-native-pathjs-charts/)\n\n\n## Current Features\n\n+ Pie, Bar, Smoothline, Stockline, Scatterplot, Tree and Radar graphs\n+ Configuration of format, labels, colors, axis, ticks, lines\n+ No touch support (yet)\n+ No animations (yet)\n+ Chart information configurable based on data parameters which specify which variables are accessors\n+ Rendering works on iOS/Android\n+ No native dependencies for linking (except linking required by [react-native-svg](https://github.com/magicismight/react-native-svg))\n\n## Example Application\n\nTo run the example application (from a cloned repo):\n\n```\ncd example\nnpm install\nreact-native link react-native-svg\nreact-native run-ios\n# or\nreact-native run-android\n```\n\n### Developing and Testing With The Example App\n\nAs you are working on changing src files in this library and testing those changes against the example app, it is necessary to copy files to example/node_modules/react-native-pathjs-charts each time a change is made. To automate this, a `sync-rnpc` script has been added that will create a background process to watch for src file changes and automatically copy them. To enable this:\n\n```\ncd example\nnpm run sync-rnpc\n```\n\n## Todo\n\nFor this library to really shine, there are a lot of improvements to be made. Here are some of my top ideas:\n+ Add basic animations to draw the charts\n+ Add touch functionality (as the react-native-svg library adds touch features)\n+ Add the ability to absolutely position regular React-Native views in relation to SVG chart elements\n+ More chart types\n+ More axis controls (to control scale)\n+ Add View component support to allow custom components instead of message when no data appears\n+ Events\n+ More documentation, information on configuration\n+ Extended examples\n+ Bug fixing, unit testing, cleanup\n+ CICD pipeline with confirmed build success\n\n\n## Contributing\n\nContributors:\nWe welcome your interest in Capital One’s Open Source Projects (the “Project”). Any Contributor to the project must accept and sign a CLA indicating agreement to the license terms. Except for the license granted in this CLA to Capital One and to recipients of software distributed by Capital One, you reserve all right, title, and interest in and to your contributions; this CLA does not impact your rights to use your own contributions for any other purpose.\n\n[Link to CLA](https://docs.google.com/forms/d/19LpBBjykHPox18vrZvBbZUcK6gQTj7qv1O5hCduAZFU/viewform)\n\nThis project adheres to the [Open Source Code of Conduct](http://www.capitalone.io/codeofconduct/). By participating, you are expected to honor this code.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capitalone/react-native-pathjs-charts.git"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx src",
+    "start": "node_modules/react-native/packager/packager.sh",
+    "test": "jest"
+  },
+  "version": "0.0.28"
+}

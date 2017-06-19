@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "sync-rnpc": "rm -rf ./node_modules/react-native-pathjs-charts; sane '/usr/bin/rsync -v -a --exclude .git --exclude example --exclude node_modules ../ ./node_modules/react-native-pathjs-charts/' .. --glob='{**/*.json,**/*.js}'"
+  },
+  "dependencies": {
+    "moment": "^2.17.1",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.0",
+    "react-native-pathjs-charts": "file:../",
+    "react-native-side-menu": "^0.20.1",
+    "react-navigation": "^1.0.0-beta.9"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.22.0",
+    "sane": "^1.4.1"
+  }
+}
